@@ -12,19 +12,16 @@ class Solution {
                 ar1 += arr1[i];
                 ar2 += arr2[i];
             }
-            if(ar1>ar2){                        // 길이가 같은 두 배열의 원소 합 비교
+            if(ar1>ar2)                        // 길이가 같은 두 배열의 원소 합 비교
                 answer = 1;
-            }
-            else if(ar1==ar2){
+            else if(ar1==ar2)
                 answer = 0;           
-             }
-            else{
+            else
                 answer = -1;
-            }
         }
-        else{                                   // arr2의 길이가 더 긴 경우
+        else                                   // arr2의 길이가 더 긴 경우
             answer = -1;
-        }
+        
         
         return answer;
     }
